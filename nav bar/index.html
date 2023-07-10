@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+            <img src="user.png" class="user pic" onclick="toggleMenu()">
+           <div class="sub-menu-wrap" id="submenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="user.png">
+                    <h2>your name</h2>
+                </div>
+                <hr>
+
+
+                <a href="#" class="sub-menu-link">
+                    <img src="profile.png">
+                    <p>edit profile</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="setting.png">
+                    <p>settings & privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="help.png">
+                    <p>help & support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                    <img src="logout.png">
+                    <p>logout</p>
+                    <span>></span>
+                </a>
+
+
+
+                
+            </div>
+        </div>    
+    </nav>
+     </div>
+<script>
+    let submenu= document.getElementById("submenu");
+
+    function togglemenu(){
+        submenu.classList.toggle("opem-menu");
+    }
+
+
+
+</script>     
+
+    
+</body>
+</html>
